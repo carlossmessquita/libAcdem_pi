@@ -69,9 +69,9 @@ WSGI_APPLICATION = 'projeto_acdem.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': '*',
+        'NAME': 'db_acdem',
         'USER': 'postgres',
-        'PASSWORD': '*',
+        'PASSWORD': '250899',
         'HOST': 'localhost',
     }
 }

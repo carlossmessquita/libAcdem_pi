@@ -48,6 +48,5 @@ class Livro(models.Model):
     edicao = models.IntegerField()
     ano_lancamento = models.DateField()
 
-
     def __str__(self):
         return f'"{self.titulo}", {self.fk_autor}'
