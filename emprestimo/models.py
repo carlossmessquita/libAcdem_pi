@@ -19,4 +19,4 @@ class Emprestimo(models.Model):
     prazo = models.DateField(default=(date.today() + timedelta(days=15)), auto_created=True, editable=False)
 
     def __str__(self):
-        return f'{self.ordem_emprestimo} - {self.fk_usuario} - D.E.:{self.data_emprestimo} - P:{self.prazo}'
+        return f'{self.ordem_emprestimo} - {self.fk_usuario} - Empréstimo: {self.data_emprestimo} - Devolução: {self.prazo}'
