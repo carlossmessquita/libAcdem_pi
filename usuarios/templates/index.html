@@ -1,13 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Acesso ACDEM</title>
-</head>
-<body>
-  <center>
-    <h1>O sistema está em atualização</h1>
-    <h3><a href="https://acdemlib.herokuapp.com/admin/">Clique aqui</a>  para acessar o portal básico.</h3>
-  </center>
-</body>
-</html>
+{% extends 'base.html' %}
+{% block content %}
+
+{% include '_navpartial.html'  %}
+<br>
+<center>
+<div class="card w-50">
+<div class="card-body">
+<h5 class="card-title">ACDEM Access</h5>
+<p class="card-text">Olá, seja bem vindo de volta ao Sistema ACDEM, para acessar o sistema, clique no botão abaixo:</p>
+<a href="https://acdemlib.herokuapp.com/admin/" class="btn btn-primary">Acesse o Sistema</a>
+</div>
+</div>
+
+</center>
+
+{% endblock %}
